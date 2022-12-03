@@ -1,10 +1,10 @@
-#include "renderer.h"
+#include "renderer.hpp"
 
 void draw_triangle() {
     glBegin(GL_POLYGON);
 
     glColor3f(1, 1, 1); 
-    
+
     glVertex3f(-0.6, -0.75, 0.5);
     glVertex3f(0.6, -0.75, 0);
     glVertex3f(0, 0.75, 0);

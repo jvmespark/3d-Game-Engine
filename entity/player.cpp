@@ -1,4 +1,4 @@
-#include "player.h"
+#include "player.hpp"
 
 void Player::ProcessKeyboard(PLAYER_MOVEMENT direction, float deltaTime) {
     float velocity = Player_MovementSpeed * deltaTime;

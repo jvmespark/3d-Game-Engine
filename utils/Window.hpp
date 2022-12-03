@@ -1,11 +1,8 @@
-#ifndef WINDOW_H
-#define WINDOW_H
+#ifndef WINDOW_HPP
+#define WINDOW_HPP
 
-#include "windows.h"
 #include "../common/common_headers.h"
-#include "GL/glut.h"
 
-//#include "renderer.h"
 #include <iostream>
 
 class Window {

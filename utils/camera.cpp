@@ -1,4 +1,4 @@
-#include "camera.h"
+#include "camera.hpp"
 
 Camera::Camera() {
     Cam_Position = glm::vec3(0.0f, 0.0f, 0.0f);

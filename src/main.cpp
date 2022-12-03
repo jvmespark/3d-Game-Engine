@@ -1,16 +1,14 @@
 #include <iostream>
 #include <string>
 
-#include "windows.h"
 #include "../common/common_headers.h"
-#include "GL/glut.h"
 
-#include "../entity/player.h"
+#include "../entity/player.hpp"
 
-#include "../utils/shader.h"
-#include "../utils/camera.h"
-#include "../utils/window.h"
-#include "../utils/renderer.h"
+#include "../utils/shader.hpp"
+#include "../utils/camera.hpp"
+#include "../utils/window.hpp"
+#include "../utils/renderer.hpp"
 
 #define STB_IMAGE_IMPLEMENTATION
 #include "../lib/stb_image.h"
