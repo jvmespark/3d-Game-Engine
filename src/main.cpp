@@ -16,11 +16,7 @@
 #include "../lib/stb_image.h"
 
 int main(int argc, char** argv) {
-    
-    float width = 1920/2;
-    float height = 1080/2;
-
-    Window window("Engine", width, height);
+    Window window("Engine", 1920/2, 1080/2);
     window.init();
 
     SDL_Event e;

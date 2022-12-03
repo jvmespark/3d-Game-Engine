@@ -13,9 +13,9 @@ enum CAMERA_MOVEMENT {
     CAMERA_UP,
 };
 
-class Cmaera {
+class Camera {
     public:
-
+        Camera();
     private:
         glm::vec3 Cam_Position;
         glm::vec3 Cam_Front;
