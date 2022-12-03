@@ -4,7 +4,11 @@ LD = -lmingw32 -lSDL2main SDL2.dll -lSDL2_image glut32.lib -lopengl32 -lglew32 -
 
 GCC = g++ -w -m32
 
-OUT_SOURCE = -o main.exe
+OUT_SOURCE = main.exe
 
 main:
-	${GCC} ${CPP_SOURCES} ${LD} ${OUT_SOURCE}
+	${GCC} ${CPP_SOURCES} ${LD} -o ${OUT_SOURCE}
+
+run: 
+	${GCC} ${CPP_SOURCES} ${LD} -o ${OUT_SOURCE}
+	./${OUT_SOURCE}

@@ -1,7 +1,11 @@
 #ifndef WINDOW_H
 #define WINDOW_H
 
-#include "../common/SDL_headers.h"
+#include "windows.h"
+#include "../common/common_headers.h"
+#include "GL/glut.h"
+
+//#include "renderer.h"
 #include <iostream>
 
 class Window {
@@ -15,6 +19,7 @@ class Window {
         float width() { return SCRN_WIDTH; }
         float height() { return SCRN_HEIGHT; }
         const char* title() { return SCRN_TITLE; }
+        SDL_Window* program() { return window; }
     private:
         SDL_Window* window;
 
@@ -22,6 +27,8 @@ class Window {
         float SCRN_HEIGHT;
 
         const char* SCRN_TITLE;
+
+        Uint32 WindowFlags;
 };
 
 #endif
